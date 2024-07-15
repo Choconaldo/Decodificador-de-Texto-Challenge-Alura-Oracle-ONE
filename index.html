@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Leonardo Tresso Mendes" />
+		<meta name="description" content="Challenge Decodificador de Texto" />
+		<title>Decodificador de Texto</title>
+		<link
+			rel="shortcut icon"
+			href="./img/favicon.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="css-reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-header">
+				<img
+					class="left-logo"
+					src="./img/oracle-alura-logo.png"
+					alt="Logo Oracle + Alura"
+				/>
+				<img
+					class="right-logo"
+					src="./img/one-logo.png"
+					alt="Logo ONE Oracle Next Education"
+				/>
+			</div>
+		</header>
+		<main>
+			<div class="container-main">
+				<div class="left-div">
+					<span
+						class="text-area"
+						role="textbox"
+						name="cripto"
+						autofocus
+						id="cripto"
+						contenteditable
+					></span>
+					<div class="warning">
+						<img
+							src="./img/exclamation-circle-fill.svg"
+							alt="Símbolo de aviso"
+						/>
+						<p>Apenas letras minúsculas e sem acento.</p>
+					</div>
+					<div class="buttons">
+						<button
+							class="button btn-cripto"
+							type="button"
+							id="criptoBtn"
+						>
+							Criptografar
+						</button>
+						<button
+							class="button btn-decripto"
+							type="button"
+							id="decriptoBtn"
+						>
+							Descriptografar
+						</button>
+					</div>
+				</div>
+				<div class="decripto-box">
+					<img
+						id="decripto-img"
+						class="img-visibility"
+						src="./img/searching.svg"
+						alt="pessoa procurando algo"
+					/>
+					<p id="decripto">Nenhuma mensagem encontrada</p>
+					<p class="decipto-subtext">
+						Digite um texto que você deseja criptografar ou
+						descriptografar.
+					</p>
+					<button
+						class="btn-copy invisible"
+						type="button"
+						id="copyBtn"
+					>
+						Copiar
+					</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container-footer">
+				<p class="footer-text">
+					Desenvolvido por Leonardo Tresso Mendes em 2024
+				</p>
+			</div>
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>
