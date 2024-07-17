@@ -15,48 +15,56 @@ copyBtnEl.addEventListener("click", copyText);
 
 function encriptText() {
 	const regularText = criptoTextEl.textContent;
-	let encriptedText = "";
-	for (letter of regularText) {
-		switch (letter) {
-			case "e":
-				encriptedText += "enter";
-				break;
-			case "i":
-				encriptedText += "imes";
-				break;
-			case "a":
-				encriptedText += "ai";
-				break;
-			case "o":
-				encriptedText += "ober";
-				break;
-			case "u":
-				encriptedText += "ufat";
-				break;
-			default:
-				encriptedText += letter;
+	const anyInvalidChar = isAnyCharInvalid(regularText);
+	if (anyInvalidChar) {
+		renderInvalid(regularText);
+	} else {
+		let encriptedText = "";
+		for (letter of regularText) {
+			switch (letter) {
+				case "e":
+					encriptedText += "enter";
+					break;
+				case "i":
+					encriptedText += "imes";
+					break;
+				case "a":
+					encriptedText += "ai";
+					break;
+				case "o":
+					encriptedText += "ober";
+					break;
+				case "u":
+					encriptedText += "ufat";
+					break;
+				default:
+					encriptedText += letter;
+			}
 		}
+		renderValid(encriptedText);
 	}
-	decriptoTextEl.textContent = encriptedText;
-	validate();
 }
 
 function decriptText() {
 	const encriptedText = criptoTextEl.textContent;
-	let decriptedText = encriptedText
-		.replaceAll("enter", "e")
-		.replaceAll("imes", "i")
-		.replaceAll("ai", "a")
-		.replaceAll("ober", "o")
-		.replaceAll("ufat", "u");
-	decriptoTextEl.textContent = decriptedText;
-	validate();
+	const anyInvalidChar = isAnyCharInvalid(encriptedText);
+	if (anyInvalidChar) {
+		renderInvalid(encriptedText);
+	} else {
+		let decriptedText = encriptedText
+			.replaceAll("enter", "e")
+			.replaceAll("imes", "i")
+			.replaceAll("ai", "a")
+			.replaceAll("ober", "o")
+			.replaceAll("ufat", "u");
+		renderValid(decriptedText);
+	}
 }
 
-function validate() {
-	const userText = criptoTextEl.textContent;
-	if (userText) {
-		for (letter of userText) {
+function isAnyCharInvalid(text) {
+	if (text) {
+		let invalidChar = 0;
+		for (letter of text) {
 			if (
 				(letter.charCodeAt(0) > 96 && letter.charCodeAt(0) < 123) ||
 				letter.charCodeAt(0) == 32 ||
@@ -66,36 +74,44 @@ function validate() {
 				letter.charCodeAt(0) == 63 ||
 				letter.charCodeAt(0) == 231
 			) {
-				decriptoTextEl.style.color = "black";
-				decriptoTextEl.style.fontWeight = 400;
-				decriptoTextEl.style.lineHeight = 1.5;
-				decriptoTextEl.style.textAlign = "left";
-				criptoTextEl.textContent = "";
-				decriptoSubtextEl.classList.add("invisible");
-				copyBtnEl.classList.remove("invisible");
-				decriptoImgEl.classList.add("invisible");
-				decriptoImgEl.classList.remove("img-visibility");
-				decriptoBoxEl.style.justifyContent = "space-between";
+				invalidChar += 0;
 			} else {
-				decriptoTextEl.style.color = "red";
-				decriptoTextEl.style.fontWeight = 700;
-				decriptoTextEl.style.lineHeight = 1.2;
-				decriptoTextEl.style.textAlign = "center";
-				decriptoTextEl.textContent =
-					"Por favor, use apenas letras minúsculas e sem acento";
-				decriptoSubtextEl.classList.remove("invisible");
-				copyBtnEl.classList.add("invisible");
-				decriptoImgEl.classList.remove("invisible");
-				decriptoImgEl.classList.add("img-visibility");
-				decriptoBoxEl.style.justifyContent = "center";
-				console.log(criptoTextEl.textContent);
-				criptoTextEl.textContent = userText;
-				break;
+				invalidChar += 1;
 			}
 		}
+		return Boolean(invalidChar);
 	} else {
-		decriptoTextEl.textContent = "Nenhuma mensagem encontrada";
+		return true;
 	}
+}
+
+function renderValid(text) {
+	decriptoTextEl.style.color = "black";
+	decriptoTextEl.style.fontWeight = 400;
+	decriptoTextEl.style.lineHeight = 1.5;
+	decriptoTextEl.style.textAlign = "left";
+	criptoTextEl.textContent = "";
+	decriptoSubtextEl.classList.add("invisible");
+	copyBtnEl.classList.remove("invisible");
+	decriptoImgEl.classList.add("invisible");
+	decriptoImgEl.classList.remove("img-visibility");
+	decriptoBoxEl.style.justifyContent = "space-between";
+	decriptoTextEl.textContent = text;
+}
+
+function renderInvalid(text) {
+	decriptoTextEl.style.color = "red";
+	decriptoTextEl.style.fontWeight = 700;
+	decriptoTextEl.style.lineHeight = 1.2;
+	decriptoTextEl.style.textAlign = "center";
+	decriptoTextEl.textContent =
+		"Por favor, use apenas letras minúsculas e sem acento";
+	decriptoSubtextEl.classList.remove("invisible");
+	copyBtnEl.classList.add("invisible");
+	decriptoImgEl.classList.remove("invisible");
+	decriptoImgEl.classList.add("img-visibility");
+	decriptoBoxEl.style.justifyContent = "center";
+	criptoTextEl.textContent = text;
 }
 
 function copyText() {
