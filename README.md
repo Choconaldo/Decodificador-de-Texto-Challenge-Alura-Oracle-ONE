@@ -7,8 +7,8 @@
 -   [Descrição do Projeto](#descrição-do-projeto)
 -   [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 -   [Acesso ao Projeto](#acesso-ao-projeto)
--   [Tecnologias e técnicas utilizadas](#tecnologias-e-tecnicas-utilizadas)
--   [Desenvolvedor do Projeto](#pessoas-desenvolvedoras)
+-   [Tecnologias e técnicas utilizadas](#tecnologias-e-técnicas-utilizadas)
+-   [Desenvolvedor do Projeto](#desenvolvedor-do-Projeto)
 
 ## Descrição do Projeto
 
@@ -18,15 +18,15 @@ Trata-se de um aplicativo web responsivo e acessível que codifica e decodifica 
 
 ## Funcionalidades e Demonstração da Aplicação
 
-Inicialmente há um campo onde deve-se inserir a mensagem a ser criptografada ou descriptografada. A mensagem a ser inserida (criptografada ou não) tem como requesitos não estar vazia e nem conter letras maiúsculas ou nem caracteres acentuados, no entanto a pontuação comum, como a vírgula e pontos final, de exclamação e de interrogação, podem se utilizados. O "c" cedilha (ç) também é aceito.
+Inicialmente há um campo onde deve-se inserir a mensagem a ser criptografada ou descriptografada. A mensagem a ser inserida (criptografada ou não) tem como requisitos não estar vazia e nem conter letras maiúsculas ou nem caracteres acentuados, no entanto a pontuação comum, como a vírgula e pontos final, de exclamação e de interrogação, podem se utilizados. O "c" cedilha (ç) também é aceito.
 
-No caso da não obediência dos requesitos supracitados, uma mensagem de alerta é exibida e a criptografia (ou descriptografia) não é efetuada.
+No caso da não obediência dos requisitos supracitados, uma mensagem de alerta é exibida e a criptografia (ou descriptografia) não é efetuada.
 
-Obedecidos os requisitos e após o clique da operação deseajada, a mensagem resultado é apresentada em campo próprio, juntamente com um botão "copiar".
+Obedecidos os requisitos e após o clique da operação desejada, a mensagem resultado é apresentada em campo próprio, juntamente com um botão "copiar".
 
 O botão "copia" tem a mesma função do "Ctrl + C", e se aplica apena à mensagem resultado.
 
-Abaixo é apresentado um curto vídeo demosntrando as funcionalidades do aplicativo:
+Abaixo é apresentado um curto vídeo demonstrando as funcionalidades do aplicativo:
 
 https://github.com/user-attachments/assets/34fdc7ef-4e4f-44d4-be9d-1af28472f1d2
 
