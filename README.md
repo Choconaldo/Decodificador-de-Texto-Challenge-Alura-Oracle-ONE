@@ -15,10 +15,6 @@ Projeto desenvolvido como parte do programa de formação e empregabilidade [ONE
 
 Trata-se de um aplicativo web responsivo que codifica e descodifica textos inseridos pelo usuário, exibindo na tela como resultado, respectivamente, as mensagens codificadas e descodificadas.
 
-Veja a screenshot abaixo:
-
-![desktop](https://github.com/user-attachments/assets/75957824-702f-4b4b-bd5e-4adcf2839608)
-
 ## Funcionalidades e Demonstração da Aplicação
 
 
