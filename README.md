@@ -33,8 +33,8 @@ https://github.com/user-attachments/assets/34fdc7ef-4e4f-44d4-be9d-1af28472f1d2
 
 ## Acesso ao Projeto
 
--   Repositório no GitHub: [https://github.com/Choconaldo/Decodificador-de-Texto-Challenge-Alura-Oracle-ONE](https://your-solution-url.com)
--   Deploy do aplicativo: [https://choconaldo.github.io/Decodificador-de-Texto-Challenge-Alura-Oracle-ONE/](https://your-live-site-url.com)
+-   [Repositório no GitHub](https://github.com/Choconaldo/Decodificador-de-Texto-Challenge-Alura-Oracle-ONE)
+-   [Deploy do aplicativo](https://choconaldo.github.io/Decodificador-de-Texto-Challenge-Alura-Oracle-ONE/)
 
 ## Tecnologias e técnicas utilizadas
 
@@ -45,11 +45,7 @@ https://github.com/user-attachments/assets/34fdc7ef-4e4f-44d4-be9d-1af28472f1d2
 -   `Acessibilidade`
 -   `Mobile first`
 
-![html5](https://img.shields.io/badge/html-f06529?style=for-the-badge&logo=html5&logoColor=white)
-![css3](https://img.shields.io/badge/CSS-2965f1?style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/javascript-f0db4f?style=for-the-badge&logo=javascript&logoColor=black)
-
 ## Desenvolvedor do Projeto
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/148563205?v=4" width=115><br><sub>Leonardo Tresso Mendes</sub>](https://github.com/Choconaldo) |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/148563205?v=4" width=150><br><sub>Leonardo Tresso Mendes</sub>](https://github.com/Choconaldo) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: |
